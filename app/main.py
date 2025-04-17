@@ -53,8 +53,7 @@ def custom_openapi():
             }
         }
     }
-    # Убери глобальную авторизацию
-    # openapi_schema["security"] = [{"OAuth2PasswordBearer": ["openid"]}]
+
     app.openapi_schema = openapi_schema
     return app.openapi_schema
 
